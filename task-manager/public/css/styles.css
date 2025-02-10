@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F7FB;
+  }
+  
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+#tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#tableContainer th, #tableContainer td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#tableContainer th {
+    background-color: #127ba7;
+    font-weight: bold;
+    color: #fff;
+}
+#tableContainer tr:hover {
+    background-color: #79b1ae;
+}
+
+#tableContainer table tr button {
+    padding: 5px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#tableContainer table tr .btn-edit {
+    background-color: #164ee9;
+}
+#tableContainer table tr .btn-del {
+    background-color: #e93616;
+}
+#tableContainer table tr .btn-complete {
+    background-color: #069961;
+}
+
+/* Estilos para el campo de captura */
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    max-width: 300px;
+}
+/* Estilos para el botón de submit */
+#taskForm button[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    background-color: #2b92cb;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+#taskForm button[type="submit"]:hover {
+    background-color: #126d9e;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #taskInput {
+        width: 100%;
+        /* max-width: none; */
+    }
+    #tableContainer {
+        padding: 0 10px;
+    }
+    #tableContainer table {
+        font-size: 14px;
+    }
+    #tableContainer th, #tableContainer td {
+        padding: 6px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    #taskForm button[type="submit"] {
+        /* width: 100%; */
+        padding: 10px;
+        margin: 10px 0;
+    }
+    #tableContainer table {
+        font-size: 12px;
+    }
+    #tableContainer th, #tableContainer td {
+        padding: 4px;
+    }
+}
